@@ -39,6 +39,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         billField.becomeFirstResponder()
+        self.tipPercentage.alpha = 0
        
         
     }
@@ -65,7 +66,7 @@ class ViewController: UIViewController {
 
     @IBAction func calculateTip(sender: AnyObject) {
            var tip_percentages = [0.18,0.2,0.22,0.3]
-        
+        self.tipPercentage.alpha = 1
         let defaults = NSUserDefaults.standardUserDefaults()
         if let stringf = defaults.stringForKey(SettingsViewController.key){
             tip_percentages[3] = Double((Float(stringf)!/100).cleanValue)!
