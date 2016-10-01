@@ -22,7 +22,9 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
-Added a tip splitter for parties up to 4
+* Added a tip splitter for parties up to 4
+* Added a drink cost splitter
+
 The settings menu is a custom entry tip field, so you can choose how much tip exactly you feel like giving. 
 
 ## Video Walkthrough 
